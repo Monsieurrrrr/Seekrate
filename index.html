@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEEKRATE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pop-up Animation -->
+    <div class="popup" id="popup">
+        <h1>SEEKRATE</h1>
+        <button id="loginButton">Log In</button>
+    </div>
+
+    <!-- Login Form (Hidden initially) -->
+    <div class="login-form" id="loginForm">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Sections (Hidden until login) -->
+    <div class="sections" id="sections" style="display: none;">
+        <div class="section" id="playerNames">
+            <h2>Player Names</h2>
+            <button onclick="addPlayerName()">Add Player Name</button>
+            <ul id="playerNamesList"></ul>
+        </div>
+        <div class="section" id="playerDetails">
+            <h2>Player Details</h2>
+            <button onclick="addPlayerDetail()">Add Player Detail</button>
+            <ul id="playerDetailsList"></ul>
+        </div>
+        <div class="section" id="bestMoments">
+            <h2>Best Moments</h2>
+            <button onclick="addBestMoment()">Add Best Moment</button>
+            <ul id="bestMomentsList"></ul>
+        </div>
+        <div class="section" id="battleHistory">
+            <h2>Battle History</h2>
+            <button onclick="addBattleHistory()">Add Battle History</button>
+            <ul id="battleHistoryList"></ul>
+        </div>
+        <div class="section" id="documents">
+            <h2>Documents</h2>
+            <button onclick="addDocument()">Add Document</button>
+            <ul id="documentsList"></ul>
+        </div>
+        <div class="section" id="extra">
+            <h2>Extra</h2>
+            <button onclick="addExtra()">Add Extra</button>
+            <ul id="extraList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
